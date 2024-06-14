@@ -1,0 +1,13 @@
+services:
+  wordpress:
+    image: wordpress:6.5.4-php8.3-apache
+    ports:
+      - 8080:80
+  
+  mysql:
+    image: mysql:8.0.30-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+    volumes:
+      - ./mysql-data:/var/lib/mysql
