@@ -3,6 +3,8 @@ services:
     image: wordpress:6.5.4-php8.3-apache
     ports:
       - 8080:80
+    volumes:
+      - ./wordpress:/var/www/html
   
   mysql:
     image: mysql:8.0.30-debian
