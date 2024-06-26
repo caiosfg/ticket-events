@@ -24,6 +24,7 @@ lerna-debug.log*
 .project
 .classpath
 .history/
+.docker/
 .c9/
 *.launch
 .settings/
